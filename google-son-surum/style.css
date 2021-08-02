@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #222;
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #1a0dab;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem 1.3rem;
+}
+
+.menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 8px;
+  font-size: 13px;
+}
+
+.grid {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.grid svg {
+  width: 24px;
+  height: 24px;
+  fill: #5f6368;
+}
+
+.grid:hover,
+.profile:hover {
+  background-color: #eee;
+  border-radius: 50%;
+  box-shadow: 0 1px 0 rgb(0, 0, 0, 0.15);
+}
+
+.profile {
+  margin: 5px 0 0 10px;
+  width: 32px;
+  height: 32px;
+  background: center no-repeat
+    url(https://mahmutoz.com/wp-content/uploads/2021/07/mahmut_oz-645x1024.jpg);
+  background-size: cover;
+  background-position-y: 0;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30.8%;
+  height: 45px;
+  border: 1px solid #dfe1e5;
+  border-radius: 25px;
+  margin: 2rem 0;
+}
+
+form:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32, 33, 36, 0.3);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.search-inp {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+
+.search-btn {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.speak-btn {
+  position: relative;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+  margin-right: 0.3rem;
+}
+
+.voice {
+  position: absolute;
+  width: 7rem;
+  right: -33px;
+  bottom: -35px;
+  padding: 8px;
+  background: #333;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  display: none;
+}
+
+.voice::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #333;
+  top: -4px;
+  right: 40%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.speak-btn:hover .voice {
+  display: inline;
+}
+
+.search-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #9aa0a6;
+}
+
+.speak-btn svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.google-search-btn {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  height: 36px;
+  min-width: 54px;
+  line-height: 27px;
+  padding: 0 16px;
+  color: #3c4043;
+  cursor: pointer;
+  margin: 0 0.4rem 1.5rem;
+  text-align: center;
+  user-select: none;
+}
+
+.google-search-btn:hover {
+  box-shadow: 0 1px 1px rgb(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.lang-desc {
+  color: #3c4043;
+  line-height: 28px;
+  font-size: 13px;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  font-size: 15px;
+}
+
+.location {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 15px 30px;
+}
+
+.footer-menu,
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-menu a,
+.footer-info a {
+  display: block;
+  padding-right: 30px;
+  white-space: nowrap;
+  color: #70757a;
+}
